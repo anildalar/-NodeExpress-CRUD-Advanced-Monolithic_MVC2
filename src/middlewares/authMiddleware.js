@@ -9,7 +9,7 @@ let authMiddleware = (req,res,next)=>{
     //jwt.verify(token, secretOrPublicKey, [options, callback])
     try {
         var decoded = jwt.verify(token,process.env.JWT_SECRET)  ;
-        req.user = decoded
+        req.user = decoded;// I have created new key on the req object
         next();
     } catch (error) {
         res.status(403).json({msg:'Unauthorized'})
@@ -18,7 +18,7 @@ let authMiddleware = (req,res,next)=>{
     
 }
 
-let adminTeacherAuth = (req,res,next)=>{
+let adminAuth = (req,res,next)=>{
     console.log(req.user.role)
     if(req.user.role !== 'admin' ){
         res.status(403).json({msg:'Unauthorized'})
@@ -27,5 +27,14 @@ let adminTeacherAuth = (req,res,next)=>{
     }
 }
 
+let adminTeacherAuth = (req,res,next)=>{
+    console.log(req.user.role)
+    if(req.user.role === 'student' ){
+        res.status(403).json({msg:'Unauthorized'})
+    }else{
+        next();
+    }
+}
 
-module.exports =  { authMiddleware,adminTeacherAuth } 
+
+module.exports =  { authMiddleware,adminAuth,adminTeacherAuth } 

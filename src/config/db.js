@@ -8,6 +8,5 @@ mongoose.connect('mongodb://localhost:27017')
     console.log('Not connected');
 });
 
-
 //Named Export
 exports.mongoose = mongoose;
