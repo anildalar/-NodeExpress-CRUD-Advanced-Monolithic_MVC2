@@ -1,9 +1,23 @@
+const { Student } = require("../../models/User");
+
 let studentController = (req,res)=>{
 
-    res.status(200).json({
-        msg:"ok student Create",
-        data:req.body
+    const student = new Student(req.body);
+    student.save()
+    .then(d=>{
+        res.status(200).json({
+            msg:"ok student Create",
+            data:d
+        });
+    })
+    .catch(e=>{
+        res.status(400).json({
+            msg:"Error",
+            error:e
+        });
     });
+
+    
 }
 
 

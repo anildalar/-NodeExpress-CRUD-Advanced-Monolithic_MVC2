@@ -51,7 +51,7 @@ https://www.w3schools.com/howto/howto_js_remove_property_object.asp#:~:text=The%
 
 ________________________________________________________________________________________________________________________________
 
-NodeExpress CRUD Operations: ( Advanced Level ) Part 1
+NodeExpress CRUD Operations: ( Advanced Level ) Part 4
 		RoleBased Token.
 
 Software Design Pattern: - MonoLithic/MVC
@@ -66,7 +66,8 @@ What we will Learn New Things
 Step. 
 
 1. First we develop locally but test with public url
-2. We deploye on internet then we test with public url(Heroku)
+2. We deploye on internet then we test with public url ( Heroku ).
+
 
 
 
@@ -95,4 +96,11 @@ localhost:3000/api/teacher/create   admin
 
 localhost:3000/api/student/create   admin,teacher
 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3R1ZGVudCIsInVzZXJpZCI6IjYzMjE0OTcwZjQ1NDViNDIyZTIzZWVkMCIsImVtYWlsIjoiYW5pbDU1QGdtYWlsLmNvbSIsImlhdCI6MTY2MzEyNjU5NywiZXhwIjoxNjY1NzE4NTk3fQ._uOBrbvqYJ6WghxUhxp5lh3mQMOZdKveuwaBi2uW3gE
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3R1ZGVudCIsInVzZXJpZCI6IjYzMjE0OTcwZjQ1NDViNDIyZTIzZWVkMCIsImVtYWlsIjoiYW5pbDU1QGdtYWlsLmNvbSIsImlhdCI6MTY2MzEyNjYxOSwiZXhwIjoxNjY1NzE4NjE5fQ.uczQms_CxvJNVTHi92M4Ku4tnylRRhRD3zFV8Cx4Ka4
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic3R1ZGVudCIsInVzZXJpZCI6IjYzMjE0OTcwZjQ1NDViNDIyZTIzZWVkMCIsImVtYWlsIjoiYW5pbDU1QGdtYWlsLmNvbSIsImlhdCI6MTY2MzEyNjczNSwiZXhwIjoxNjY1NzE4NzM1fQ.84zODAWH9_GxQUqlFQpG4HM_0qnO-sAsDvwafLs4-Cg
 

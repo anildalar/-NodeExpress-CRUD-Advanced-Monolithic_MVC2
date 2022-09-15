@@ -42,4 +42,24 @@ let userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 
-module.exports = { User,mongoose }
+const studentSchema = new mongoose.Schema({
+    fname:{
+        type:String,
+        required:true
+    },
+    lname:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true,
+        unique:true
+    }
+},{
+    timestamps:true
+})
+
+const Student = mongoose.model('Student', studentSchema);
+
+module.exports = { User,Student,mongoose }
